@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>RGGAMING</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Diplomata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--NAVBAR START HERE-->
+  <section id="NAVBAR">
+    <nav>
+      <div class="logo">
+        <span class="logod"></span>
+        <p>RG</p><span class="logod logod2"></span>
+      </div>
+      <div class="HAMBURGER" id="barrs" onclick="openlinks()">
+        <div class="bcon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+      </div>
+    </nav>
+    <div class="navlinks" id="mydiv">
+      <p class="tag"><span class="material-symbols-outlined">
+          info
+        </span> <b>GAMES</b></p>
+      <ul class="links">
+        <a href="#" class="link" onclick="opengame(0)">Guess the number</a>
+        <a href="#" class="link" onclick="opengame(1)">Stone paper secoors</a>
+      </ul>
+      <p class="tag"><span class="material-symbols-outlined">
+          info
+        </span> <b>INFO</b></p>
+      <ul class="links">
+        <a href="#" class="link" onclick="RELOAD()">Home</a>
+        <a href="https://rudracodeforge.github.io/PRINCEDAKSH/aboutme.html" class="link">About us</a>
+        <a href="contact.html" class="link">Contact us</a>
+      </ul>
+      <p class="tag"><span class="material-symbols-outlined">
+          info
+        </span> <b>BLOGS</b></p>
+      <ul class="links">
+        <a href="https://medium.com/@prince2113kumar/subscribe" class="link">RG Tech</a>
+        <a href="#" class="link">RG Blogs</a>
+      </ul>
+      <p class="tag"><span class="material-symbols-outlined">
+          info
+        </span> <b>RG STORE</b></p>
+      <ul class="links">
+        <a href="https://www.instagram.com/formalwear.in?igsh=djI0NTh5ZXBlNmY5" class="link">Physical Product</a>
+        <a href="https://shop.garena.sg/app" class="link">In-game Product</a>
+      </ul>
+    </div>
+  </section>
+  <!--NAVBAR ENDS HERE-->
+
+  <!--IMAGES START HERE-->
+  <section class="imgcon">
+    <div class="images">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStz1gzMS-TA-C7FnRNI5uJdAwlfbubDsqCTYA0g-YhHxjEvB6NShxt_yY&s=10" />
+    </div>
+    <div class="partner">
+      <p>WITHDRAWAL PARTNER</p>
+      <img
+        src="https://d3g4wmezrjkwkg.cloudfront.net/website/images/homePage/withdrawalPartner_bannerV2.webp?&w=1080&q=75" />
+    </div>
+    <img class="bod" src="https://d3g4wmezrjkwkg.cloudfront.net/website/images/homePage/home-v2-h2-bg.svg" />
+  </section>
+  <section class="c-con">
+    <div class="had">
+      <p>PLAY CHILDHOOD GAME AND LIVE YOUR CHILDHOOD</p>
+    </div>
+    <div>
+      <p class="para">HELLO GUYS I AM TRY TO MAKE ALL THOSE GAME WHOSE LOST THEIR SELF I THINK EVERY NEW GENERATION
+        KINDS TRY THESE GAMES BECAUSE THIS GAMES ARE MAKE MY AND ALL 2000's AND 1900's KIDS CHILDHOOD SO PLEASE TRY AND
+        PROVIDE ME A FEEDBACK.</p>
+    </div>
+  </section>
+  <!--IMAGES ENDS HERE-->
+
+  <!--GAMES START HERE-->
+  <section>
+    <!--FIRST GAME START HERE-->
+    <div class="game1">
+      <button onclick="closegame(0)" class="backbtn"><i class="fa-solid fa-arrow-left"></i></button>
+      <div class="ind">
+        <h1>GUESS THE NUMBER</h1>
+        <div class="chance">
+          <score>SCORE: <span id="SCORE"></span>
+          </score>
+          <chance>REMAINING CHANCE : <span id="CHANCE"></span></chance>
+        </div>
+        <div>
+          <input id="inp" type="number" />
+          <p id="para"></p>
+          <div class="btt">
+            <button onclick="check()" class="btn">SUMBIT</button>
+            <button id="RE" onclick="RESTART()" class="pl btn">RESTART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIRST GAME ENDS HERE-->
+
+    <!--SECOND GAME START HERE
+    <div class="game1">
+      <button onclick="closegame(1)" class="backbtn"><i class="fa-solid fa-arrow-left"></i></button>
+    </div>
+    <!--SECOND GAME ENDS HERE-->
+  </section>
+  <!--GAMES ENDS HERE-->
+
+  <!--FOOTER START HERE-->
+  <footer class="foot">
+    <div class="fcon">
+      <div class="slink-container">
+        <a href="https://www.instagram.com/princedaksh52?igsh=MnFwNWR2Mjd3MXEz" class="Social">
+          <span><i class="fa-brands fa-square-instagram"></i></span>
+          <span>INSTAGRAM</span>
+        </a>
+        <br>
+        <a href="#" class="Social">
+          <span><i class="fa-brands fa-square-facebook"></i></span>
+          <span>FACEBOOK</span>
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/prince-daksh-a4a70a2a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          class="Social">
+          <span><i class="fa-brands fa-linkedin"></i></span>
+          <span>LINKDIN</span>
+        </a>
+        <br>
+        <a href="https://github.com/RudraCodeForge" class="Social">
+          <span><i class="fa-brands fa-square-github"></i></span>
+          <span>GITHUB</span>
+        </a>
+        <br>
+        <a href="https://discord.com/invite/fUNjkXCe" class="Social">
+          <span><i class="fa-brands fa-discord"></i></span>
+          <span>DISCORD</span>
+        </a>
+      </div>
+      <div class="address">
+        <a href="https://x.com/RUDRA21446?t=_1rTY1JaXBzzOCxMEzo9lQ&s=09" class="Social"><i
+            class="fa-brands fa-square-x-twitter"></i> X-TWITTER</a>
+        <br>
+        <a href="https://youtube.com/@PRINCEDAKSHWEB_WIZARD?si=tfuBCQNq2LYVWyau" class="Social"><i
+            class="fa-brands fa-square-youtube"></i> YOUTUBE</a>
+        <br>
+        <a href="https://www.buymeacoffee.com/rudra21" class="Social"><i class="fa-solid fa-mug-hot"></i> BUY ME A
+          COFFEE</a>
+        <br>
+        <a href="https://medium.com/@prince2113kumar/subscribe" class="Social"><i class="fa-brands fa-medium"></i>
+          OUR-BLOGS.</a>
+        <br>
+        <a href=" https://maps.app.goo.gl/tdNWERZSyM2ynzrQ6" class="Social"><i class="fa-solid fa-location-dot"></i>
+          NH-58 BHOLA ROAD KHADULI MEERUT.</a>
+      </div>
+    </div>
+    <br>
+    <div class="cop">
+      &copy COPYRIGHT BY PRINCE DAKSH
+    </div>
+  </footer>
+  <!--FOOTER ENDS HERE-->
+  <script src="script.js">
+  </script>
+
+</body>
+
+</html>
